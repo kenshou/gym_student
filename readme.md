@@ -32,3 +32,6 @@ pip install --no-index -f https://github.com/Kojoley/atari-py/releases atari_py
 
 # 游戏环境描述
 https://gym.openai.com/envs/
+
+# 其他
+* [超级马里奥](/superMario/readme.md) 
