@@ -3,3 +3,8 @@
 # 安装super-mario环境
 pip install gym-super-mario-bros  
 [超级马里奥环境测试](/superMario/00_test.py)
+
+# 参考
+[用keras搭建DQN](https://blog.csdn.net/senjie_wang/article/details/82708381)  
+[DQN理论基础](https://blog.csdn.net/qq_32690999/article/details/78594220)  
+[现成的gym的DQN](https://github.com/keon/deep-q-learning/blob/master/dqn.py)
