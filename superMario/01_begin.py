@@ -1,7 +1,8 @@
-from nes_py.wrappers import BinarySpaceToDiscreteSpaceEnv
 import gym_super_mario_bros
 from gym_super_mario_bros.actions import SIMPLE_MOVEMENT
+from nes_py.wrappers import BinarySpaceToDiscreteSpaceEnv
 from tqdm import tqdm
+
 
 def get_action(state,action_space):
     '''
@@ -23,6 +24,7 @@ def main():
 
     done = True
     max_step=5000
+    print(env.observation_space.shape)
     #win下加ascii=True才会不换行
     qbar=tqdm(max_step,ascii=True)
     for step in range(max_step):
@@ -33,7 +35,7 @@ def main():
         state, reward, done, info = env.step(action)
         if done:
             print(str(step)+" 英雄请卷土重来"+str(info))
-        # env.render()
+        env.render()
     env.close()
     qbar.close()
 
